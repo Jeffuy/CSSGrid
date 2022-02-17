@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(26, 66, 18);
+    display: grid;
+    height: 100vh;
+}
+
+.contenedor {
+    background-color: rgb(26, 66, 18);
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    place-self: center;
+    align-self: center;
+}
+
+.item {
+    background-color: rgb(142, 240, 15);
+	height: 150px;
+	width: 150px;
+	display: grid;
+	transition: background-color 1s, transform 1s;
+}
+
+.item:hover {
+	background-color: rgb(17, 43, 2);
+	transform: scale(1.1);
+}
+
+.item>div {
+	background-color: rgb(114, 214, 101);
+	width: 25%;
+	height: 40%;
+	place-self: flex-end;
+}
