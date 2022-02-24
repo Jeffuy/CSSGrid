@@ -38,3 +38,34 @@ body {
 	height: 40%;
 	place-self: flex-end;
 }
+
+.back {
+    display: grid;
+	place-items: center;
+	align-content: center;
+	margin-bottom: 50px;
+}
+
+.back-button {
+    border: none;
+    border-radius: 20px;
+    background-color: #eefc2a;
+    font-weight: bolder;
+    padding: 12px 24px;
+	opacity: 0.5;
+}
+
+.back-button:hover {
+	opacity: 1;
+}
+
+.back-button a {
+    color: rgb(92, 92, 92);
+	text-decoration: none;
+}
+
+@media screen and (max-width: 768px) {
+	.back-button {
+		opacity: 1;
+	}
+}

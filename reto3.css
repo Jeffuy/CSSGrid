@@ -78,6 +78,33 @@ body {
     height: 100%;
 }
 
+
+.back {
+    display: grid;
+	place-items: center;
+	align-content: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.back-button {
+    border: none;
+    border-radius: 20px;
+    background-color: #eefc2a;
+    font-weight: bolder;
+    padding: 12px 24px;
+	opacity: 0.5;
+}
+
+.back-button:hover {
+	opacity: 1;
+}
+
+.back-button a {
+    color: rgb(92, 92, 92);
+	text-decoration: none;
+}
+
 @media screen and (max-width: 600px) {
     .contenedor {
         margin-top: 20px;
@@ -90,4 +117,8 @@ body {
         grid-column: 1;
         width: 100%;
     }
+
+	.back-button {
+		opacity: 1;
+	}
 }
